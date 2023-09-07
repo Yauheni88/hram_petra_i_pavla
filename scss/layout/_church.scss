@@ -1,0 +1,91 @@
+.church {
+   
+    &__title-box {
+        max-width: 200px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__left {
+        flex: 0 0 49%;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 8px;
+    }
+
+    &__right {
+        flex: 0 0 48%;
+    }
+
+    &__right-subtitle {
+        font-size: 36px;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 1.3;
+        text-align: justify;
+        margin-bottom: 10px;
+        font-family: 'Lora', serif;
+    }
+}
+
+// --------------------- media -------------------------//
+
+@media screen and (max-width: 992px) {
+    .church {
+        &__right-subtitle {
+            font-size: 32px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .church {
+        &__box {
+            gap: 20px;
+        }
+
+        &__right-subtitle {
+            font-size: 26px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .church {
+        &__box {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        &__left {
+            flex: 0 0 100%;
+        }
+
+        &__image {
+            margin-top: 0;
+        }
+
+        &__right {
+            flex: 0 0 100%;
+        }
+    }
+}
