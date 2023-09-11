@@ -181,19 +181,17 @@ main {
     top: -20px;
     bottom: 0;
     right: -100%;
-    transition: all 0.3s;
-  }
-  .header__nav.active {
-    right: 0;
-    left: 0;
-    top: -20px;
-    bottom: 0;
+    background-color: var(--accent-color-dark);
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent-color-dark);
+    transition: right 0.3s;
+  }
+  .header__nav.active {
+    right: 0;
+    left: 0;
   }
   .header__nav-list {
     display: flex;
