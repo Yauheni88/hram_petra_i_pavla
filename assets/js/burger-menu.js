@@ -12,7 +12,7 @@ if (menu && menuBtn) {
         html.classList.toggle('lock');
     })
 
-    menu.querySelectorAll('.header__menu-link').forEach(link => {
+    menu.querySelectorAll('.header__nav-link').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('active');
             menuBtn.classList.remove('active');
