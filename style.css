@@ -529,7 +529,6 @@ main {
 .priest__text {
   font-size: 17px;
   line-height: 1.3;
-  text-align: justify;
   margin-bottom: 10px;
   font-family: "Lora", serif;
 }
@@ -571,6 +570,126 @@ main {
   }
   .priest__right {
     order: 1;
+    flex: 0 0 100%;
+  }
+}
+.map {
+  background-color: #F8FCF9;
+  padding-bottom: 0;
+}
+.map__title-box {
+  max-width: 350px;
+}
+.map__iframe {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .map__iframe {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map__iframe {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .map__iframe {
+    height: 350px;
+  }
+}
+.footer {
+  background-color: var(--accent-color-dark);
+  color: var(--white-color);
+  padding-bottom: 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px 2%;
+  padding-bottom: 20px;
+}
+.footer__card {
+  flex: 0 0 32%;
+}
+.footer__card-title {
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer__priest-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.footer__link-phone {
+  display: block;
+  font-size: 18px;
+  color: var(--white-color);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer__link-phone:hover {
+  color: var(--accent-color);
+}
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__item {
+  list-style: none;
+}
+.footer__link {
+  display: block;
+  font-size: 18px;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__link:hover {
+  color: var(--accent-color);
+}
+.footer__rights {
+  padding: 5px 0 15px;
+}
+.footer__rights-text {
+  font-size: 16px;
+  color: rgba(255, 249, 249, 0.6);
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__card:nth-child(1) {
+    order: 3;
+  }
+  .footer__card:nth-child(2) {
+    order: 1;
+  }
+  .footer__card:nth-child(3) {
+    order: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__inner {
+    gap: 20px;
+  }
+  .footer__card {
+    flex: 0 0 48%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer__inner {
+    gap: 15px;
+    text-align: center;
+  }
+  .footer__card {
     flex: 0 0 100%;
   }
 }

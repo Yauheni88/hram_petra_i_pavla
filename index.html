@@ -49,7 +49,7 @@
             </div>
         </header>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__gradient"></div>
             <div class="container">
                 <div class="hero__inner">
@@ -61,7 +61,7 @@
             </div>
         </section>
 
-        <section class="church section">
+        <section class="church section" id="church">
             <div class="container">
                 <div class="church__inner">
                     <div class="church__title-box schedule__title-box">
@@ -105,7 +105,7 @@
             </div>
         </section>
 
-        <section class="priest church section">
+        <section class="priest church section" id="priest">
             <div class="container">
                 <div class="church__inner">
                     <div class="priest__title-box schedule__title-box">
@@ -139,7 +139,8 @@
                                     <p class="priest__text">2022 г. — Минская духовная семинария. Семинария, бакалавр богословия.</p>
                                 </li>
                                 <li class="priest__item">
-                                    <span class="priest__item-span">Место служения и должность:</span>Настоятель храма святых апостолов Петра и Павла в с. Валевка. Клирик <a class="priest__link" target="_blank" href="https://novogrud-eparchy.by/novogrudok-borisoglebolskiy-sobor/">собора святых Бориса и Глеба г. Новогрудка</a>.
+                                    <span class="priest__item-span">Место служения и должность:</span>
+                                    <p class="priest__text">Настоятель храма святых апостолов Петра и Павла в с. Валевка. Клирик <a class="priest__link" target="_blank" href="https://novogrud-eparchy.by/novogrudok-borisoglebolskiy-sobor/">собора святых Бориса и Глеба г. Новогрудка</a>.</p>
                                 </li>
                             </ul>
                         </div>
@@ -151,7 +152,7 @@
             </div>
         </section>
 
-        <section class="schedule section">
+        <section class="schedule section" id="schedule">
             <div class="container">
                 <div class="schedule__inner">
                     <div class="schedule__title-box">
@@ -246,29 +247,69 @@
                         </tbody>
                     </table>
                     <p class="schedule__text">По вопросам совершений треб и Богослужений обращаться по телефону 
-                        <a href="tel:+375299985691" class="schedule__phone">+375(29)998-56-91</a> (А1), <a href="tel:+375297938764" class="schedule__phone">+375 29 793 87 64</a> (МТС) Иерей Евгений Запольский.
+                        <a href="tel:+375299985691" class="schedule__phone">+375(29)998-56-91</a> (А1), <a href="tel:+375297938764" class="schedule__phone">+375(29)793-87-64</a> (МТС) Иерей Евгений Запольский.
                     </p> 
                 </div>
             </div>
         </section>
 
-        <section class="map">
+        <section class="map section" id="map">
             <div class="container">
                 <div class="map__inner">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.48360669521!2d25.884724520625767!3d53.45927989471803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ded138b949d1d5%3A0x3871f4f14828d204!2z0KbQsNGA0LrQstCwINCf0LXRgtGA0LDQv9Cw0Z7Qu9Cw0Z7RgdC60LDRjw!5e0!3m2!1sru!2sby!4v1694095204160!5m2!1sru!2sby" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map__title-box schedule__title-box">
+                        <h2 class="map__title title">Как добраться</h2>
+                        <div class="schedule__subtitle-box">
+                            <div class="schedule__line"></div>
+                            <svg class="schedule__svg" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M464.46 246.68L352 179.2V128h48c8.84 0 16-7.16 16-16V80c0-8.84-7.16-16-16-16h-48V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v48h-48c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h48v51.2l-112.46 67.48A31.997 31.997 0 0 0 160 274.12V512h96v-96c0-35.35 28.65-64 64-64s64 28.65 64 64v96h96V274.12c0-11.24-5.9-21.66-15.54-27.44zM0 395.96V496c0 8.84 7.16 16 16 16h112V320L19.39 366.54A32.024 32.024 0 0 0 0 395.96zm620.61-29.42L512 320v192h112c8.84 0 16-7.16 16-16V395.96c0-12.8-7.63-24.37-19.39-29.42z"/>
+                            </svg>
+                            <div class="schedule__line"></div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.48360669521!2d25.884724520625767!3d53.45927989471803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ded138b949d1d5%3A0x3871f4f14828d204!2z0KbQsNGA0LrQstCwINCf0LXRgtGA0LDQv9Cw0Z7Qu9Cw0Z7RgdC60LDRjw!5e0!3m2!1sru!2sby!4v1694095204160!5m2!1sru!2sby" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer class="footer section">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__card">
+                        <h4 class="footer__card-title">Ссылки</h4>
+                        <ul class="footer__nav-list">
+                            <li class="footer__item">
+                                <a href="#hero" class="footer__link">Главная</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#church" class="footer__link">О храме</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#priest" class="footer__link">Настоятель храма</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#schedule" class="footer__link">Расписание Богослужений</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#map" class="footer__link">Как добраться</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__card">
+                        <h4 class="footer__card-title">Контакты</h4>
+                        <p class="footer__priest-name">Иерей Евгений Запольский:</p>
+                        <a href="tel:+375299985691" class="footer__link-phone">+375(29) 998-56-91 (А1)</a>
+                        <a href="tel:+375297938764" class="footer__link-phone">+375(29) 793-87-64 (МТС)</a>
+                    </div>
+                    <div class="footer__card">
+                        <h4 class="footer__card-title">Адрес</h4>
+                        <p class="footer__priest-name">231408, Гродненская обл., Новогрудский р-н, д. Валевка, ул. Новогрудская</p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <div class="container">
-                
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-
+            <div class="footer__rights">
+                <div class="container">
+                    <p class="footer__rights-text">© 2023 Храм в честь святых апостолов Петра и Павла. Все права защищены.</p>
+                </div>
             </div>
         </footer>
     </main>

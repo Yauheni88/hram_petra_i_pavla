@@ -1,0 +1,38 @@
+.map {
+    background-color: #F8FCF9;
+    padding-bottom: 0;
+
+    &__title-box {
+        max-width: 350px;
+    }
+
+    &__iframe {
+        display: block;
+    }
+}
+
+// --------------------- media -------------------------//
+
+@media screen and (max-width: 992px) {
+    .map {
+        &__iframe {
+            height: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map {
+        &__iframe {
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .map {
+        &__iframe {
+            height: 350px;
+        }
+    }
+}
