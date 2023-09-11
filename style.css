@@ -181,7 +181,7 @@ main {
     top: -20px;
     bottom: 0;
     right: -100%;
-    transition: right 0.3s;
+    transition: all 0.3s;
   }
   .header__nav.active {
     right: 0;
